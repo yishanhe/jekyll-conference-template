@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+
+<html  manifest="manifest.php">
+<head>
+	<meta charset="UTF-8" />
+	<title>CFP | HotWeb 2015</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/common-02.css" />
+	<link rel="stylesheet" href="css/screen-04.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="js/screen.js"></script>		
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.0.6"></script>
+
+	<link rel="stylesheet" href="css/hotweb.css" />
+  	<script type="text/javascript" src="js/jquery.min.js"></script>
+  	<script type="text/javascript" src="js/image_slide.js"></script>
+  	<script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  	<script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  	<script type="text/javascript">
+    	  $(document).ready(function() {
+            $('ul.sf-menu').sooperfish();
+          });
+  	</script>
+
+</head>
+<body>
+<div data-role="page" id="home">
+	<div data-role="content"  >
+
+<!--
+<script type="text/javascript">
+
+$(document).ready(function(){
+	(function ($, F) {
+	    
+	    // Opening animation - fly from the top
+	    F.transitions.dropIn = function() {
+	        var endPos = F._getPosition(true);
+
+	        endPos.top = (parseInt(endPos.top, 10) - 200) + 'px';
+	        endPos.opacity = 0;
+	        
+	        F.wrap.css(endPos).show().animate({
+	            top: '+=200px',
+	            opacity: 1
+	        }, {
+	            duration: F.current.openSpeed,
+	            complete: F._afterZoomIn
+	        });
+	    };
+
+	    // Closing animation - fly to the top
+	    F.transitions.dropOut = function() {
+	        F.wrap.removeClass('fancybox-opened').animate({
+	            top: '-=200px',
+	            opacity: 0
+	        }, {
+	            duration: F.current.closeSpeed,
+	            complete: F._afterZoomOut
+	        });
+	    };
+	    
+	    // Next gallery item - fly from left side to the center
+	    F.transitions.slideIn = function() {
+	        var endPos = F._getPosition(true);
+
+	        endPos.left = (parseInt(endPos.left, 10) - 200) + 'px';
+	        endPos.opacity = 0;
+	        
+	        F.wrap.css(endPos).show().animate({
+	            left: '+=200px',
+	            opacity: 1
+	        }, {
+	            duration: F.current.nextSpeed,
+	            complete: F._afterZoomIn
+	        });
+	    };
+	    
+	    // Current gallery item - fly from center to the right
+	    F.transitions.slideOut = function() {
+	        F.wrap.removeClass('fancybox-opened').animate({
+	            left: '+=200px',
+	            opacity: 0
+	        }, {
+	            duration: F.current.prevSpeed,
+	            complete: function () {
+	                $(this).trigger('onReset').remove();
+	            }
+	        });
+	    };
+
+	}(jQuery, jQuery.fancybox));
+		
+		$('#banner a').fancybox({
+	        openMethod : 'dropIn',
+	        openSpeed : 350,
+
+	        closeMethod : 'dropOut',
+	        closeSpeed : 250,
+	        
+	        nextMethod : 'slideIn',
+	        nextSpeed : 250,
+	        
+	        prevMethod : 'slideOut',
+	        prevSpeed : 250,
+			
+			beforeLoad: function() {
+				var el, id = $(this.element).data('title-id');
+	
+	            if (id) {
+	                el = $('#' + id);
+	            
+	                if (el.length) {
+	                    this.title = el.html();
+	                }
+	            }
+			},
+			helpers : {
+		        title: {
+		            type: 'inside'
+		        }
+		    }
+				
+		});
+	  
+	})
+</script>
+-->
+
+		<div id="banner" >
+			<div class="photo-pannel clearfix">
+
+			        <div class="logo">
+					<img src="images/logo.jpg" style="width:260px; margin-top:0px"/>
+					<div style="font-size: 1.6em; color:dark green">November 12-13, 2015</div>
+					<p style="font-size:1.1em; margin:20px 10px 0px 10px;color:dark green">Third IEEE Workshop on Hot Topics in Web Systems and Technologies</p>
+					<p style="font-size:1.1em;margin:40px 10px 0px 0px;color:dark green">Washington, D.C., USA</p>
+				</div>
+			  
+                              
+				<!--
+				<div class="tile" style="width:310px">
+					<a data-title-id="t1"
+					 class="fancybox" rel="g1" data-ajax="false" href="images/originals/14184435417_bb6ef8d1ed_o.jpg">
+ 					<img class="photo"  src="images/_thumber.php?img=originals/14184435417_bb6ef8d1ed_o.jpg&w=310" style="margin-top: -15%"/> 
+					<img class="bnr-icon " src="images/icons/white/06-magnify.png" />
+					</a>
+					<div id="t1" class="hidden">Photo by <a rel="external" href="https://www.flickr.com/photos/cmichel67/14184435417">Christopher Michel</a>. 
+					Available under the <a rel="external" href="http://creativecommons.org/licenses/by/2.0/">Creative Commons license</a>.</div>
+				</div>
+				<div class="tile" style="width:180px">
+					<a data-title-id="t2"
+					 class="fancybox" rel="g1" data-ajax="false" href="images/originals/5650492168_e524a0fc4f_o.jpg">
+					<img class="photo"  src="images/_thumber.php?img=originals/5650492168_e524a0fc4f_o.jpg&w=180" style="margin-top: 0%" /> 
+					<img class="bnr-icon" src="images/icons/white/06-magnify.png" />
+					</a>
+					<div id="t2" class="hidden">Photo by <a rel="external" href="https://www.flickr.com/photos/pamwood707/5650492168">Woody Hibbard</a>. 
+					Available under the <a rel="external" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons license</a>.</div>
+				</div>
+				<div class="tile" style="width:205px">
+					<a data-title-id="t3"
+					class="fancybox" rel="g1" data-ajax="false" href="images/originals/8172685300_8bbc9ee3fc_o.jpg">
+					<img class="photo"  src="images/_thumber.php?img=originals/8172685300_8bbc9ee3fc_o.jpg&h=120" style="margin-top: 0%"/> 
+					<img class="bnr-icon" src="images/icons/white/06-magnify.png" /></a>
+					<div id="t3" class="hidden">Photo by <a rel="external" href="https://www.flickr.com/photos/10659106@N00/8172685300">Michael Bludworth</a>. 
+						Available under the <a rel="external" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons license</a>.</div>
+				</div>
+				<div class="tile" style="width:160px">
+					<a data-title-id="t4"
+					 class="fancybox" rel="g1" data-ajax="false" href="images/originals/6869994013_866c746e5a_o.jpg">
+					<img class="photo"  src="images/_thumber.php?img=originals/6869994013_866c746e5a_o.jpg&w=160" style="margin-top: 0%"/> 
+					<img class="bnr-icon" src="images/icons/white/06-magnify.png" /></a>
+					<div id="t4" class="hidden">Photo by <a rel="external" href="https://www.flickr.com/photos/53848015@N04/6869994013">Janet Stutzman</a>. 
+						Available under the <a rel="external" href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons license</a>.</div>
+				</div>
+				<div class="tile" style="width:120px">
+					<a data-title-id="t5"
+					 class="fancybox" rel="g1" data-ajax="false" href="images/originals/13906893935_39717159a1_o.jpg">
+					<img class="photo"  src="images/_thumber.php?img=originals/13906893935_39717159a1_o.jpg&w=120" style="margin-top: 0%"/> 
+					<img class="bnr-icon" src="images/icons/white/06-magnify.png" /></a>
+					<div id="t5" class="hidden">Photo by <a rel="external" href="https://www.flickr.com/photos/scottloftesness/13906893935">Scott Loftesness</a>. 
+					Available under the <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons license</a>.</div>
+				</div>
+				-->
+
+				<div id="slideshow"><span class="STYLE8"></span>
+                  			<ul class="slideshow">
+                  				<li class="show"><img width="500" height="270" src="images/dc1.jpg" alt="" /></li>
+                  				<li ><img width="500" height="270" src="images/dc2.jpg" alt="" /></li>
+                  				<li ><img width="500" height="270" src="images/dc3.jpg" alt="" /></li>
+        
+          				</ul> 
+            			</div><!--close slideshow-->      
+				
+			</div>
+		</div><!-- /banner -->
+
+		
+		<div class="top-navbar" data-role="controlgroup"  data-type="horizontal" data-mini="true" style="margin:0px 0px">
+			<a class='nv-line-a ' data-role="button" data-theme="a" href="index.html" rel="external">Home</a>
+			<a class='nv-line-a ' data-role="button" data-theme="a" href="organization.html" rel="external">Organizers</a>
+			<a class='nv-line-a ui-btn-active ' data-role="button" data-theme="a" href="cfp.html" rel="external">Call for Papers</a>
+			<a class='nv-line-a nv-line-end ' data-role="button" data-theme="a" href="submission.html" rel="external">Submission</a>
+			<div class="nv-line-cut"></div>
+ 			<a class='nv-line-b nv-line-start ' data-role="button" data-theme="a" href="program.html" rel="external">Programs</a>
+			<a class='nv-line-b ' data-role="button" data-theme="a" href="venue.html" rel="external">Venue</a>
+			<a class='nv-line-b ' data-role="button" data-theme="a" href="registration.html" rel="external">Registration</a>
+		</div><!-- /top-navbar -->	
+		
+
+		<div class="main-content clearfix" style="position:relative">
+<style>
+.date-list em { color: #888; }
+</style>
+<div class="two-column">
+
+        <div class="col-b text welcome">
+      <p>HotWeb 2015 is sponsored by the IEEE Computer Society and by the
+      IEEE CS Technical Committee on the Internet. </p>
+
+      <p>Papers describing timely research contributions in HotWeb's
+      areas of interest are solicited. Papers reporting on initial
+      results as well as papers discussing mature research projects or
+      case studies of deployed systems are equally sought out.</p>
+
+      <p>Submitted papers must be neither previously published nor
+      under review by another workshop, conference or journal. Only
+      electronic submissions in PDF will be accepted. Submitted papers
+      must be written in English, must be no longer than 6 pages
+      (minimum 10pt font), must render without error using standard
+      PDF viewing tools, must print on US-Letter-sized paper, and must
+      conform to standard IEEE conference submission guidelines.</p>
+
+      <p>Notice that at least one of the authors of each paper
+      accepted for presentation in HotWeb 2015 must be registered. All
+      papers presented at the workshop will <!-- be published in formal
+      workshop proceedings and will --> be included in the IEEE Digital
+      Library.</p>
+
+
+<div class="infotitle">Help Promote HotWeb 2015</div>
+
+	  <p>Please use the HTML below to display the HotWeb 2015 button or banner on your Web site. Your visitors will be able to click the button to learn more about the conference.</p>
+<p><a
+href="http://www.cs.gmu.edu/~sqchen/HotWeb2015/banner_125x125.jpg"  target="_blank"><img class="alignnone wp-image-418 size-full" src="http://www.cs.gmu.edu/~sqchen/HotWeb2015/banner_125x125.jpg" alt="Logo_HotWeb_2015" width="125" height="125" /></a></p>
+<p></p>	  
+<p>Size: 125&#215;125 pixels</p>
+<pre>&lt;a href="http://www.cs.gmu.edu/~sqchen/HotWeb2015/"&gt;
+&lt;img src="http://www.cs.gmu.edu/~sqchen/HotWeb2015/banner_125x125.jpg" alt="HotWeb 2015" width="125" height="125" border="0" /&gt;
+&lt;/a&gt;</pre>
+
+<!--	  
+<p><a href="http://icac2015.imag.fr/wp-content/uploads/2014/10/icac15_banner_468x100.jpg"><img class="alignnone wp-image-419 size-full" src="http://icac2015.imag.fr/wp-content/uploads/2014/10/icac15_banner_468x100.jpg" alt="Banner 468x100 " width="468" height="100" /></a></p>
+<p>&nbsp;</p>
+<p>Size: 468&#215;100 pixels</p>
+<pre>&lt;a href="http://icac2015.imag.fr/"&gt;
+&lt;img src="http://icac2015.imag.fr/wp-content/uploads/2014/10/icac15_banner_468x100.jpg" alt="ICAC '15" width="450" height="93" border="0" /&gt;
+&lt;/a&gt;</pre>
+<p><a href="http://icac2015.imag.fr/wp-content/uploads/2014/10/icac15_banner_2156x459.jpg"><img class="img-responsive alignnone wp-image-420 size-full" src="http://icac2015.imag.fr/wp-content/uploads/2014/10/icac15_banner_2156x459.jpg" alt="Banner 2156x459 " width="2156" height="459" /></a></p>
+<p>&nbsp;</p>
+<p>Size: 2156&#215;459 pixels</p>
+<pre>&lt;a href="http://icac2015.imag.fr/"&gt;
+&lt;img src="http://icac2015.imag.fr/wp-content/uploads/2014/10/icac15_banner_2156x459.jpg" alt="ICAC '15" width="2156" height="459" border="0" /&gt;
+&lt;/a&gt;</pre>
+-->
+
+
+	  
+
+	  
+	</div>
+
+
+	<div class="col-a text welcome">
+
+      <div class="infotitle">Call for Papers (<a
+      href="./HotWeb2015-CFP.pdf" target="_blank">PDF</a>,<a
+      href="./HotWeb2015-CFP.txt" target="_blank">TXT</a>,<a
+      href="./HotWeb2015-CFP-brochure.pdf" target="_blank">Brochure</a>) </div>
+
+      <!--
+      <p>CFP in other formats <a href="./HotWeb2015-CFP.pdf"><IMG
+      SRC="images/pdf-icon.jpg" height="28" width="38" align="BOTTOM"
+      border="0" alt="pdf"></a> <a href="./HotWeb2015-CFP.txt"><IMG
+      SRC="images/text-icon.jpg" height="28" width="38" align="BOTTOM"
+      border="0" alt="txt"></a>
+      </p>
+-->
+
+      <p>HotWeb is a forum that brings together researchers and
+      practitioners interested in the design, implementation, and
+      evaluation of Internet systems and applications.</p>
+
+      <p>Sponsored by the IEEE Computer Society and the IEEE-CS
+      Technical Committee on the Internet, the workshop seeks to act
+      as a conduit for the presentation of novel approaches used in
+      support of performance, scalability, and security of Internet systems and applications, including
+      Web searching and indexing, content distribution and delivery
+      networks, Web services, online social networks, Web of Things,
+      mobile Web, and edge computing.</p>
+
+      <p>Particular areas of interest include, but are not limited
+      to:</p>
+
+      <p><ul>
+
+        <li>Content delivery architectures</li>
+        <li>Peer-to-Peer systems</li>
+
+        <li>Support for mobile and wireless systems</li>
+
+        <li>Web caching and replication</li>
+
+        <li>Edge services and dynamic content delivery</li>
+
+        <li>Multimedia content distribution</li>
+        <li>Content placement and request routing</li>
+
+        <li>Overlay networks</li>
+
+        <li>Measurement studies of deployed systems</li>
+
+        <li>Security and privacy</li>
+
+        <li>Wide-area upload and content gathering</li>
+
+        <li>Novel web-based applications</li>
+
+        <li>Web/database integration</li>
+
+        <li>Internet telephony</li>
+
+        <li>Information retrieval and searching</li>
+
+        <li>Electronic commerce</li>
+
+        <li>Social computing</li>
+
+        <li>Web of Things</li>
+
+        <li>Mobile web</li>
+
+        <li>Big web data</li>
+
+        
+      </ul>
+    </p>
+
+      <div class="infotitle">Contact</div>
+
+       <p>For questions, please email to: hotweb2015@gmail.com</p> 
+
+
+	</div><!--col-a-->
+
+
+	<div class="col-b">
+<style>
+.news-list .more {
+	display: none;
+}
+
+.news-list li.show {
+	display: block;
+}
+</style>
+
+<script>
+function onClickMore() {
+	$('.more').toggleClass('show');
+	if ($('.more').hasClass('show')) {
+		$('.btnMore a').text('Less news...');
+		$('.btnMore').children('div.ui-btn-inner').children('span.ui-icon').removeClass('ui-icon-arrow-d').addClass('ui-icon-arrow-u');
+		
+	}
+	else {
+		$('.btnMore a').text('More news...');
+		$('.btnMore').children('div.ui-btn-inner').children('span.ui-icon').removeClass('ui-icon-arrow-u').addClass('ui-icon-arrow-d');
+	}
+}
+</script>
+
+<!--
+<ul class="news-list" data-role="listview"
+	 data-inset="true"  data-dividertheme="d">
+	<li data-role="list-divider"><strong>News</strong></li>
+	
+	<li><a href="index.php?id=cfdemo" style="font-weight: bold">16 Dec 2014 &mdash; Call for Posters &amp; Demos
+	is available online</a></li>
+	<li><a href="index.php?id=cfp">27 Sep 2014 &mdash; Paper
+			submission server is open</a></li>
+	<li><a href="index.php?id=cfp">26 Sep 2014 &mdash;
+			Submission deadline extended</a></li>
+	
+	<li><a href="index.php?id=cfp">20 Aug 2014 &mdash; Call for Papers available online</a></li>
+	<li>11 Jun 2014 &mdash; Website is launched</li>
+</ul>
+-->
+				</div>
+</div>
+		</div><!-- /main-content -->
+
+
+      <div id="copyright">
+        <hr>
+        <table border="0" cellpadding="0" cellspacing="0" width="750">
+          <tbody>
+            <tr>
+              <td width="25%"> 
+                <a href="http://validator.w3.org/check/referer"><img
+                    src="images/valid-html401.gif" alt="Valid HTML 4.01!" border="0"
+                    height="20"> </a> 
+                <a href="http://jigsaw.w3.org/css-validator/"><img
+                    src="images/valid-css.gif" alt="Valid CSS!" border="0" height="20"> 
+                </a> 
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+		<!--
+		<div class="screen-logos">
+			<h3>Sponsored by</h3>
+			<div class="clearfix" style="width:120px; margin-left:auto; margin-right:auto;">
+				<div style="float:left;"><a href="http://www.acm.org/"><img src="images/acmlogo_h_50.png" /></a></div>
+				<div style="float:left;margin-left:20px"><a href="http://www.sigmobile.org/"><img src="images/sigmobile_h_50.png" /></a></div>
+
+              		       	<div style="float:left;"><a href="http://www.computer.org"><img src="images/ieee-logo.gif" height="40" border="0" alt="IEEE CS"></a></div>
+                                <div style="float:left;"><a href="http://www.usenix.org"><img src="http://www.usenix.org/graphics/ext/usenix100x40red.gif" height=30 border=0 alt="The USENIX Association"></a></div>
+				<div style="float:left;"><a href="http://www.tid.es/html/telefonica_investigacion_desarrollo.html"><img src="images/logotelefonica.gif" width="90" border="0" alt="Telefonica"></a></div>
+              			<div style="float:left;"><a href="http://research.microsoft.com/"><img src="images/msr-s.gif" border="0" alt="Microsoft"></a></div>
+				<div style="float:left;"><a href="http://research.ibm.com/"><img src="images/IBMResearchLogoJan2007.gif" width="150" border="0" alt="IBM"></a></div>
+
+			</div>
+			
+		</div>
+		-->
+
+	</div><!-- /content -->
+</div><!-- /page -->
+</body>
+</html>

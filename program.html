@@ -1,0 +1,739 @@
+
+<!DOCTYPE html>
+
+<html  manifest="manifest.php">
+<head>
+	<meta charset="UTF-8" />
+	<title>Programs | HotWeb 2016</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/common-02.css" />
+	<link rel="stylesheet" href="css/screen-04.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="js/screen.js"></script>		
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.0.6"></script>
+
+        <link rel="stylesheet" href="css/hotweb.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/image_slide.js"></script>
+        <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+        <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $('ul.sf-menu').sooperfish();
+          });
+        </script>
+	
+</head>
+<body>
+<div data-role="page" id="papers">
+	<div data-role="content"  >
+
+<!--
+<script type="text/javascript">
+
+$(document).ready(function(){
+	(function ($, F) {
+	    
+	    // Opening animation - fly from the top
+	    F.transitions.dropIn = function() {
+	        var endPos = F._getPosition(true);
+
+	        endPos.top = (parseInt(endPos.top, 10) - 200) + 'px';
+	        endPos.opacity = 0;
+	        
+	        F.wrap.css(endPos).show().animate({
+	            top: '+=200px',
+	            opacity: 1
+	        }, {
+	            duration: F.current.openSpeed,
+	            complete: F._afterZoomIn
+	        });
+	    };
+
+	    // Closing animation - fly to the top
+	    F.transitions.dropOut = function() {
+	        F.wrap.removeClass('fancybox-opened').animate({
+	            top: '-=200px',
+	            opacity: 0
+	        }, {
+	            duration: F.current.closeSpeed,
+	            complete: F._afterZoomOut
+	        });
+	    };
+	    
+	    // Next gallery item - fly from left side to the center
+	    F.transitions.slideIn = function() {
+	        var endPos = F._getPosition(true);
+
+	        endPos.left = (parseInt(endPos.left, 10) - 200) + 'px';
+	        endPos.opacity = 0;
+	        
+	        F.wrap.css(endPos).show().animate({
+	            left: '+=200px',
+	            opacity: 1
+	        }, {
+	            duration: F.current.nextSpeed,
+	            complete: F._afterZoomIn
+	        });
+	    };
+	    
+	    // Current gallery item - fly from center to the right
+	    F.transitions.slideOut = function() {
+	        F.wrap.removeClass('fancybox-opened').animate({
+	            left: '+=200px',
+	            opacity: 0
+	        }, {
+	            duration: F.current.prevSpeed,
+	            complete: function () {
+	                $(this).trigger('onReset').remove();
+	            }
+	        });
+	    };
+
+	}(jQuery, jQuery.fancybox));
+		
+		$('#banner a').fancybox({
+	        openMethod : 'dropIn',
+	        openSpeed : 350,
+
+	        closeMethod : 'dropOut',
+	        closeSpeed : 250,
+	        
+	        nextMethod : 'slideIn',
+	        nextSpeed : 250,
+	        
+	        prevMethod : 'slideOut',
+	        prevSpeed : 250,
+			
+			beforeLoad: function() {
+				var el, id = $(this.element).data('title-id');
+	
+	            if (id) {
+	                el = $('#' + id);
+	            
+	                if (el.length) {
+	                    this.title = el.html();
+	                }
+	            }
+			},
+			helpers : {
+		        title: {
+		            type: 'inside'
+		        }
+		    }
+				
+		});
+	  
+	})
+</script>
+-->
+
+		<div id="banner" >
+			<div class="photo-pannel clearfix">
+
+				<div class="logo">
+					<img src="images/logo.jpg" style="width:260px; margin-top:0px"/>
+					<div style="font-size: 1.6em; color:dark green">October 24-25, 2016</div>
+					<p style="font-size:1.1em; margin:20px 10px 0px 10px;color:dark green">Fourth IEEE Workshop on Hot Topics in Web Systems and Technologies</p>
+					<p style="font-size:1.1em;margin:40px 10px 0px 0px;color:dark green">Washington, D.C., USA</p>
+				</div>
+				
+			
+                                <div id="slideshow"><span class="STYLE8"></span>
+                                        <ul class="slideshow">
+                                                <li class="show"><img width="500" height="270" src="images/dc1.jpg" alt="" /></li>
+                                                <li ><img width="500" height="270" src="images/dc2.jpg" alt="" /></li>
+                                                <li ><img width="500" height="270" src="images/dc3.jpg" alt="" /></li>
+
+                                        </ul>
+                                </div><!--close slideshow-->
+
+			</div>
+		</div><!-- /banner -->
+
+                <div class="top-navbar" data-role="controlgroup"  data-type="horizontal" data-mini="true" style="margin:0px 0px">
+                        <a class='nv-line-a ' data-role="button" data-theme="a" href="index.html" rel="external">Home</a>
+                        <a class='nv-line-a ' data-role="button" data-theme="a" href="organization.html" rel="external">Organizers</a>
+                        <a class='nv-line-a ' data-role="button" data-theme="a" href="cfp.html" rel="external">Call for Papers</a>
+                        <a class='nv-line-a nv-line-end ' data-role="button" data-theme="a" href="submission.html" rel="external">Submission</a>
+                        <div class="nv-line-cut"></div>
+                        <a class='nv-line-b nv-line-start ui-btn-active ' data-role="button" data-theme="a" href="program.html" rel="external">Programs</a>
+                        <a class='nv-line-b ' data-role="button" data-theme="a" href="venue.html" rel="external">Venue</a>
+                        <a class='nv-line-b ' data-role="button" data-theme="a" href="registration.html" rel="external">Registration</a>
+                </div><!-- /top-navbar -->
+
+		<div class="main-content clearfix" style="position:relative">
+
+<style type="text/css">
+.paper {
+	margin: 10pt;
+	font-size: 10pt;
+	}
+.paper .title {
+	font-weight: bold;
+	}
+	
+	.proglist .hdr1 h2, .proglist .hdr2 h2 {
+	font-size: 100%;
+	padding:0px;
+	margin:.5ex 0px;
+}
+
+
+.proglist h3 {
+	font-size:90%;
+	margin-top:0px;
+}
+
+.proglist p, .proglist td {
+	margin-bottom:0px;
+	white-space: normal;
+	font-size:90%;
+}
+
+.proglist td {
+	font-size:80%;
+	font-weight:normal;
+}
+
+.proglist em {
+color: #888;
+}
+
+</style>
+
+		  <!--
+<div class="one-column text" id="reg">
+
+      <div class="infotitle">Technical Program (TBA)</div>
+
+      <p>
+      -->
+
+		<div class="main-content clearfix" style="position:relative">
+
+
+<div class="one-column">
+	<style type="text/css">
+.proglist .hdr1 h2,.proglist .hdr2 h2 {
+	font-size: 100%;
+	padding: 0px;
+	margin: .5ex 0px;
+}
+
+.proglist .time {
+	display: block;
+	width: 8em;
+	float: left;
+}
+
+.ui-bar-b .time {
+	height: 2em;
+}
+.sesChair .ui-li .ui-btn-inner a.ui-link-inherit, .sessChair .ui-li-static.ui-li {
+padding-bottom:0px;
+}
+.proglist .chair {
+	display: block;
+	position:relative;
+	padding-top: 10px;
+	margin-left: 111px;
+	font-weight: normal;
+	font-size: 100%;
+	color: #148;
+	float:left; 
+	
+	border-bottom:1px dotted black;
+  
+<!--	cursor:pointer; -->
+}
+.sesChair {
+position:absolute; z-index:1000; top:280px; left:300px; width:300px;
+display:none;
+}
+
+.proglist h3 {
+	font-size: 80%;
+	margin-top: 0px;
+}
+
+.proglist p,.proglist td {
+	margin-bottom: 0px;
+	white-space: normal;
+}
+
+.proglist td {
+	font-size: 80%;
+	font-weight: normal;
+}
+
+.proglist em {
+	color: #888;
+}
+
+.shrink-close {
+	height: 10em;
+	overflow: hidden;
+}
+
+.shrink-open {
+	
+}
+
+.shrink-open .fade-hide {
+	display: none;
+}
+
+.shrink-close .fade-hide {
+	height: 3em;
+	background-color: transparent;
+	background: -webkit-linear-gradient(top, rgba(246, 246, 246, 0),
+		rgba(246, 246, 246, 1));
+	background-image: -webkit-gradient(linear, left top, left bottom,
+		from(rgba(246, 246, 246, 0) /*{a-bar-background-start}*/),
+		to(rgba(246, 246, 246, 1) 
+		 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(rgba(246, 246, 246, 0)
+		
+		 /*{a-bar-background-start}*/, rgba(246, 246, 246, 1) 
+		 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(rgba(246, 246, 246, 0)
+		
+		 /*{a-bar-background-start}*/, rgba(246, 246, 246, 1) 
+		 /*{a-bar-background-end}*/); /* FF3.6 */
+	background-image: -ms-linear-gradient(rgba(246, 246, 246, 0)
+		
+		 /*{a-bar-background-start}*/, rgba(246, 246, 246, 1) 
+		 /*{a-bar-background-end}*/); /* IE10 */
+	background-image: -o-linear-gradient(rgba(246, 246, 246, 0)
+		
+		 /*{a-bar-background-start}*/, rgba(246, 246, 246, 1) 
+		 /*{a-bar-background-end}*/); /* Opera 11.10+ */
+	background-image: linear-gradient(rgba(246, 246, 246, 0) 
+		 /*{a-bar-background-start}*/, rgba(246, 246, 246, 1) 
+		 /*{a-bar-background-end}*/);
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#keynotebtn, li.paper {
+	background: white;
+}
+
+#keynotebtn.ui-btn-active, li.paper.ui-btn-active {
+	background: white;
+	border-color: #bbb;
+	color: #333;
+	text-shadow: white 0px 1px 0px;
+}
+
+#keynotebtn.ui-btn-active p,#keynotebtn.ui-btn-active h3,
+li.paper.ui-btn-active p, li.paper.ui-btn-active h3 {
+	color: #333;
+}
+
+
+
+.shrink .img {
+	float: left;
+	width: 120px;
+}
+
+.shrink .abstr {
+	margin-left: 130px;
+}
+
+.xshrink-close .img {
+	width: 120px;
+}
+
+.xshrink-close .abstr {
+	margin-left: 130px;
+}
+
+.xshrink-open .img {
+	width: 200px;
+}
+
+
+
+.xshrink-open .abstr {
+	margin-left: 210px;
+}
+
+.ui-bar-f {
+	border: 1px solid #ffa256 /*{a-bar-border}*/;
+	background: #FFeecc /*{a-bar-background-color}*/;
+	border:1px solid #bbb;
+	border-bottom:none;
+		color: 					#333 /*{e-bar-color}*/;
+	font-weight: bold;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
+}
+
+.ui-bar-d {
+	border: 1px solid #ffa256 /*{a-bar-border}*/;
+	background: #dddddd /*{a-bar-background-color}*/;
+	border:1px solid #bbb;
+	border-bottom:none;
+	color: 					#333 /*{e-bar-color}*/;
+	font-weight: bold;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
+}
+
+.ui-bar-k {
+	border: 1px solid #ffa256 /*{a-bar-border}*/;
+	background: #FFFFff /*{a-bar-background-color}*/;
+	border:1px solid #bbb;
+	border-bottom:none;
+		color: 					#333 /*{e-bar-color}*/;
+	font-weight: bold;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
+}
+
+
+
+
+</style>
+	
+
+	
+	
+	<ul class="proglist ui-listview ui-listview-inset ui-corner-all ui-shadow" data-role="listview" data-inset="true" data-dividertheme="a" data-theme="d">
+		<li class="hdr1 ui-bar-a ui-li ui-li-divider ui-corner-top" data-role="list-divider" style="display: block" role="heading">
+		<center>	<h2 class="ui-li-heading">Monday, October 24, 2016</h2></center>
+		</li>
+		<li class="hdr2 ui-bar-f ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">13:00</span> <span class="timeHdr">Registration
+					Open</span>
+			</h2>
+		</li>
+
+
+			<!--
+		<li class="hdr2 ui-bar-d ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">08:00 – 09:00</span> <span class="timeHdr">Breakfast</span>
+			</h2>
+		</li>
+		-->
+		
+		<li class="hdr2 ui-bar-f ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">13:30 - 13:40 </span> <span class="timeHdr">Opening
+					Session</span>
+			</h2>
+		</li>
+
+
+		<li class="hdr2 ui-bar-k ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">13:40 – 14:40</span> <span class="timeHdr">
+			                <a target="_blank" href="./keynote1.html"><div>	 Keynote: Disruption at the Internet Edge</div>
+			              <!--	<div style="margin-left: 175px">         -- Alibaba's Practice on Web Infrastructure</div> -->
+					<div class="chair"
+			id="chair1">Dr. Jack Brassil <em>(Princeton
+			University -- on leave at NSF CISE/CNS)</em></div></a>
+				</span>
+			</h2>
+		</li>
+
+		
+	
+		<li class="hdr2 ui-bar-d ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">14:40 – 15:00</span> <span class="timeHdr">Coffee
+					Break</span>
+			</h2>
+		</li>
+
+		<li class="hdr2 ui-bar-f ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">15:00 – 17:00</span> <span class="timeHdr">
+				<div>Session 1: Content Management and Future Web</div> 
+					<div class="chair"
+			id="chair1">Session Chair: Arun Iyengar</div>
+				</span>
+			</h2>
+		</li>
+
+
+
+				<li class="paper ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">Client-centric Content Delivery Network</h3>
+				<p class="ui-li-desc">
+Sipat Triukose <em>(Chulalongkorn University)</em> and Michael Rabinovich  <em>(Case Western Reserve University)</em>
+				</p>
+	
+		</div><span class=" ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+
+
+	
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">A Case for End-to-End Deduplication</h3>
+				<p class="ui-li-desc">
+					Fred Douglis <em>(Dell EMC)</em>
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">Exploiting ICN for Efficient Content Dissemination in CDNs</h3>
+				<p class="ui-li-desc">
+					Jiachen Chen, Haoyuan Xu,Shashikanth Penugonde, Yanyong Zhang, and Dipankar Raychaudhuri <em>(Rutgers University)</em> </em>
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">Firework: Big Data Processing in Collaborative Edge Environment</h3>
+				<p class="ui-li-desc">
+				Quan Zhang <em>(Wayne State University)</em>,
+				Xiaohong Zhang <em>(Henan Polytechnic
+				University)</em>, Weisong Shi <em>(Wayne State
+				University)</em>, Qingyang Zhang <em>(Wayne
+				State University)</em> and Hong Zhong <em>(Anhui University)</em>
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+				
+				
+
+		<li class="hdr2 ui-bar-d ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">18:00 – 20:00</span> <span class="timeHdr">Banquet</span>
+			</h2>
+		</li>
+
+		
+		
+
+		
+		
+
+
+
+
+		<li class="hdr1 ui-bar-a ui-li ui-li-divider" data-role="list-divider" style="display: block" role="heading">
+		<center>	<h2 class="ui-li-heading">Tuesday, October 25, 2016</h2></center>
+		</li>
+		<li class="hdr2 ui-bar-f ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">08:00</span> <span class="timeHdr">Registration
+					Open</span>
+			</h2>
+		</li>
+
+
+					
+		<li class="hdr2 ui-bar-d ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">08:00 – 09:00</span> <span class="timeHdr">Breakfast</span>
+			</h2>
+		</li>
+		
+
+
+
+		<li class="hdr2 ui-bar-k ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">09:00 – 10:00</span> <span class="timeHdr">
+			                <a target="_blank" href="./keynote2.html"><div>	 Keynote:Data Transparency on the Web</div>
+					<div class="chair"
+			id="chair1">Dr. Pablo Rodriguez <em>(CEO of Telefonica Alpha)</em></div></a>
+				</span>
+			</h2>
+		</li>
+
+
+
+		
+
+
+
+		<li class="hdr2 ui-bar-d ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">10:00 – 10:30</span> <span class="timeHdr">Coffee
+					Break</span>
+			</h2>
+		</li>
+		
+		
+		
+		<li class="hdr2 ui-bar-f ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">10:30 – 12:30</span> <span class="timeHdr"><div>Session
+					2: Web Analytics</div>
+					<div class="chair" id="chair5">Session Chair: Ling Liu</div>
+				</span>
+			</h2>
+		</li>
+
+
+		<li class="paper ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">Video Watch Time and Comment Sentiment: Experiences from Youtube</h3>
+				<p class="ui-li-desc">
+		 Rong Yang, Sarvjeet Singh, Pei Cao, Ed Chi and Bo Fu <em>(Google)</em>
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+		
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">Greedy Maximization Framework for Graph-based Influence Functions </h3>
+		  <p class="ui-li-desc">
+Edith Cohen <em>(Google Research)</em>			
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">Intention-based Online Consumer Classification for Recommendation  and Personalization</h3>
+				<p class="ui-li-desc">
+					Fanjuan Shi and Chirine Ghedira Guegan <em>(IAE - Lyon 3 University)</em>
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">Novel Vision of Cyber-Human Smart City</h3>
+				<p class="ui-li-desc">
+					Schahram Dustdar, Stefan Nastic and Ognijen Scekic <em>(TU Wien)</em>
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+		
+
+
+		<li class="hdr2 ui-bar-d ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">12:30 – 13:30</span> <span class="timeHdr">Lunch</span>
+			</h2>
+		</li>
+
+		<li class="hdr2 ui-bar-f ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">13:30 – 15:00</span> <span class="timeHdr"><div>Session
+					3: Web Optimization</div>
+					<div class="chair" id="chair6">Session Chair: Weisong Shi</div>
+				</span>
+			</h2>
+		</li>
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">Placement Strategies for Virtualized Network Functions in A NFaaS Cloud</h3>
+				<p class="ui-li-desc">
+				Xin He <em>(University of Massachusetts Amherst)</em>, Tian Guo <em>(University of Massachusetts Amherst)</em>, Erich Nahum <em>(IBM Thomas J. Watson Research Center)</em> and Prashant Shenoy <em>(University of Massachusetts Amherst)</em>
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">Transparency in the New gTLD Era: Measuring the DNS Centralized Zone Data Service</h3>
+				<p class="ui-li-desc">
+					Ah Renum Kang <em>(University at Buffalo)</em>, Seong Hoon Jeong <em>(Korea University)</em>, Steve Ko <em>(University at Buffalo)</em>, Kui Ren <em>(University at Buffalo)</em> and Aziz Mohaisen  <em>(University at Buffalo) </em>
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">Arrows in Commercial Web Applications</h3>
+				<p class="ui-li-desc">
+						Eric Fritz, Jose Antony and Tian Zhao <em>(University of Wisconsin-Milwaukee)</em>
+				
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+
+		<li class="hdr2 ui-bar-d ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">15:00 – 15:30</span> <span class="timeHdr">Coffee
+					Break</span>
+			</h2>
+		</li>
+
+				<li class="hdr2 ui-bar-f ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">15:30 – 17:00</span> <span class="timeHdr"><div>Session
+					4: Web Security</div>
+					<div class="chair"
+			id="chair6">Session Chair: Songqing Chen</div>
+				</span>
+			</h2>
+		</li>
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">PROVIDE: Hiding from Automated Network Scans with Proofs of Identity </h3>
+				<p class="ui-li-desc">
+				William Koch and Azer Bestavros <em>(Boston University)</em>
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">What Ad Blockers Are (and Are Not) Doing</h3>
+				<p class="ui-li-desc">
+					Craig Wills and Doruk Uzunoglu
+			<em>(Worcester Polytechnic Institute)</em>
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+		<li class="paper ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+				<h3 class="ui-li-heading">Towards User Re-Authentication on Mobile Devices via On-Screen Keyboard</h3>
+				<p class="ui-li-desc">
+						Zijiang Hao and Qun Li <em>(College of William and Mary) </em>
+				
+				</p>
+		</div><span class="ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+
+			
+		<li class="hdr2 ui-bar-d ui-li ui-li-divider ui-bar-a" data-role="list-divider" role="heading">
+			<h2 class="ui-li-heading">
+				<span class="time">17:00 –
+			17:10</span> <span class="timeHdr">Closing Remarks</span>
+			</h2>
+		</li>
+	
+
+
+
+
+
+	</ul>
+
+
+</div>
+
+     
+      
+
+      
+
+</div>
+		</div><!-- /main-content -->
+		
+		<!--
+		<div class="screen-logos">
+			<h3>Sponsored by</h3>
+			<div class="clearfix" style="width:120px; margin-left:auto; margin-right:auto;">
+							<div style="float:left;"><a href="http://www.acm.org/"><img src="images/acmlogo_h_50.png" /></a></div>
+				<div style="float:left;margin-left:20px"><a href="http://www.sigmobile.org/"><img src="images/sigmobile_h_50.png" /></a></div>
+			</div>
+			
+		</div>
+		-->
+
+      <div id="copyright">
+        <hr>
+        <table border="0" cellpadding="0" cellspacing="0" width="750">
+          <tbody>
+            <tr>
+              <td width="25%">
+                <a href="http://validator.w3.org/check/referer"><img
+                    src="images/valid-html401.gif" alt="Valid HTML 4.01!" border="0"
+                    height="20"> </a>
+                <a href="http://jigsaw.w3.org/css-validator/"><img
+                    src="images/valid-css.gif" alt="Valid CSS!" border="0" height="20"> 
+                </a>
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+	</div><!-- /content -->
+</div><!-- /page -->
+</body>
+</html>
