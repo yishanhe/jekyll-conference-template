@@ -13,18 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Hotweb 2017
-email: hotwebchair@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  HotWeb is a forum that brings together researchers and practitioners interested 
-  in the design, implementation, and evaluation of Internet systems and applications. 
-  Sponsored by the IEEE Computer Society and by IEEE-CS Technical Committee on the Internet, 
-  the workshop seeks to act as a conduit for the presentation of novel approaches 
-  used in support of performance, scalability, and security of Internet systems and applications, 
-  including web searching and indexing, content distribution and delivery networks, 
-  web services, online social networks, web of Things, mobile web, and edge computing.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+baseurl: "/~syi/hotweb2017" # the subpath of your site, e.g. /blog
+url: "http://www.cs.wm.edu" # the base hostname & protocol for your site, e.g. http://example.com
+css: /hotweb.css
 
 # Build settings
 markdown: kramdown
@@ -34,6 +26,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+timezone: America/New_York
+google_analytics:
+
+# Assets
 assets:
   assets:
     - "*.jpg"

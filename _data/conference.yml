@@ -1,4 +1,9 @@
-title: Fifth IEEE Workshop on Hot Topics in Web Systems and Technologies
+full_title: Fifth IEEE Workshop on Hot Topics in Web Systems and Technologies
+short_title: Hotweb 2017
+email: hotwebchair@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  HotWeb is a forum bringing together researchers and practitioners interested 
+  in the design, implementation, and evaluation of Internet systems and applications. 
 location: San Jose, CA, 2017
 date: October 17, 2017
 logo_path: /assets/logo2017.jpg
@@ -37,32 +42,40 @@ slideshow:
 navbar:
   - id: 0
     label: Home
-    path: /index.html
+    path: ./index.html
     visible: True
   - id: 1
     label: Committees
-    path: /committees.html
+    path: ./committees.html
     visible: True
   - id: 2
     label: Call for Papers
-    path: /cfp.html
+    path: ./cfp.html
     visible: True
   - id: 3
     label: Submission
-    path: /submission.html
+    path: ./submission.html
     visible: True
   - id: 4
     label: Program
-    path: /program.html
+    path: ./program.html
     visible: True
   - id: 5
     label: Venue
-    path: /venue.html
-    visible: True
+    path: ./venue.html
+    visible: False
   - id: 6
     label: Registration
-    path: /registration.html
+    path: ./registration.html
     visible: True
+deadlines:
+  # - date: 2017-2-17 23:59:59 -0700
+  #   text: Submission deadline
+  # - date: 2017-4-17 23:59:59 -0700
+  #   text: Notification of acceptance
+news:
+  - date: 2017-03-08
+    text: Website online
 sponsors:
   # - name: Adobe
   #   logo_path: /assets/sponsors/adobe-logo.png
@@ -86,5 +99,12 @@ organizing_committees:
     name: TBA
     org: TBA
     homepage: TBA
-
+steering_committees:
+  - name: TBA
+    org: TBA
+    homepage: TBA
+technical_program_committees:
+  - name: TBA
+    org: TBA
+    homepage: TBA
 

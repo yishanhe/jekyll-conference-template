@@ -1,3 +1,70 @@
 ---
-layout: committees
+layout: page
+slide_id: 1
 ---
+
+<div class="container">
+    <div class="row mt-xs-0 mt-sm-0 mt-md-1 mt-lg-2 mt-xl-3 mb-xs-2 mb-sm-2">
+        
+        <div class="col">
+            <!--######### Organizing ##########-->
+            <div class="card">
+                <div class="card-header text-white bg-inverse committee-card-header">Organizing Committee</div>
+                {% if site.data.conference.organizing_committees %}
+                {% for committee in site.data.conference.organizing_committees %}
+                 <div class="card-block bg-faded">
+                    <h6 class="card-title">{{ committee.role }}</h6>
+                    <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
+                    <h6 class="card-subtitle text-muted">{{ committee.org }}</h6>
+                </div>  
+                {% endfor %}
+                {% else %}
+                <div class="card-block bg-faded">
+                    <h6 class="card-title">TBA</h6>
+                    <p><strong>TBA</strong><p>
+                    <h6 class="card-subtitle text-muted">TBA</h6>
+                </div>               
+                {% endif %}
+            </div>
+            <!--######### Steering ##########-->
+            <div class="card">
+                <div class="card-header text-white bg-inverse">Steering Committee</div>
+                {% if site.data.conference.steering_committees %}
+                {% for committee in site.data.conference.steering_committees %}
+                 <div class="card-block bg-faded">
+                    <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
+                    <h6 class="card-subtitle text-muted">{{ committee.org }}</h6>
+                </div>  
+                {% endfor %}
+                {% else %}
+                <div class="card-block bg-faded">
+                    <p><strong>TBA</strong><p>
+                    <h6 class="card-subtitle text-muted">TBA</h6>
+                </div>               
+                {% endif %}
+            </div>
+            <!--####################################-->
+        </div>
+
+        <div class="col">
+            <!--######### TPC ##########-->
+            <div class="card">
+                <div class="card-header text-white bg-inverse">Technical Program Committee</div>
+                {% if site.data.conference.technical_program_committees %}
+                {% for committee in site.data.conference.technical_program_committees %}
+                 <div class="card-block bg-faded">
+                    <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
+                    <h6 class="card-subtitle text-muted">{{ committee.org }}</h6>
+                </div>  
+                {% endfor %}
+                {% else %}
+                <div class="card-block bg-faded">
+                    <p><strong>TBA</strong><p>
+                    <h6 class="card-subtitle text-muted">TBA</h6>
+                </div>               
+                {% endif %}
+            </div>
+            <!--####################################-->
+        </div>
+    </div>
+</div>

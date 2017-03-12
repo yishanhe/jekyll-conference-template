@@ -1,0 +1,57 @@
+.jumbotron,
+.carousel-item {
+    height: 20rem;
+    border-radius: 0;
+}
+
+.alert,
+.card,
+.jumbotron,
+.nav, 
+.carousel {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.carousel-caption {
+    bottom: 0rem;
+    opacity: 0.7;
+    padding-bottom:0.25rem;
+}
+
+.carousel-caption p {
+    font-size: 0.25rem;
+}
+
+.card {
+    margin-top: 0.75rem; 
+    margin-bottom: 1.25rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.nav {
+    margin-top: 0.25rem; 
+    margin-bottom: 0.25rem;
+    border-radius: 0.75rem;
+}
+
+.sponsor {
+    margin-top: 0.75rem; 
+    margin-bottom: 0.75rem;
+}
+
+.sponsor img {
+    max-height: 3rem;
+}
+
+.sponsor h5 {
+    margin-top: 1.5rem; 
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    padding-top: 1.5rem; 
+    border-top: 0.05rem solid #e5e5e5;
+    margin-top: 1.0rem; 
+}
