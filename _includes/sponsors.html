@@ -1,0 +1,20 @@
+<div class="container">
+<div class="row mt-2 mb-1">
+    <div class="col-md-10 offset-md-1 text-muted">
+        <h5 class="text-center">Sponsored by</h5>
+        {% if site.data.conference.sponsors == nil %}
+        <div class="alert alert-warning rounded text-center m-3">
+            <p>TBA</p>
+        </div>
+        {% else %}
+        <div class="row m-3">
+            <div class="col row-eq-height">
+                {% for sponsor in site.data.conference.sponsors %}
+                    <img class="img-fluid mx-auto d-inline-block" style="max-height: 5rem;" src="{{ site.baseurl }}{{ sponsor.logo_path }}" alt="{{ sponsor.name }}">
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+</div>

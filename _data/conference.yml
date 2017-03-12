@@ -1,0 +1,90 @@
+title: Fifth IEEE Workshop on Hot Topics in Web Systems and Technologies
+location: San Jose, CA, 2017
+date: October 17, 2017
+logo_path: /assets/logo2017.jpg
+slideshow:
+  - id: 0
+    image_path: /assets/slideshow/image0.jpg
+    description: San Jose night scene.
+    photographer_name: Mike Boening
+    photographer_link: https://www.flickr.com/photos/memoriesbymike/
+    active: True
+  - id: 1
+    image_path: /assets/slideshow/image1.jpg
+    description: San Jose Museum of Art.
+    photographer_name: Bryan Nabong
+    photographer_link: https://www.flickr.com/photos/bongarang/
+  - id: 2
+    image_path: /assets/slideshow/image2.jpg
+    description: San Jose State University.
+    photographer_name: David Sawyer
+    photographer_link: https://www.flickr.com/photos/18702768@N04/
+  - id: 3
+    image_path: /assets/slideshow/image3.jpg
+    description: Cathedral Basilica of St. Joseph.
+    photographer_name: Patricia Montes Gregory
+    photographer_link: https://www.flickr.com/photos/32159045@N02/
+  - id: 4
+    image_path: /assets/slideshow/image4.jpg
+    description: Winchester Mystery House.
+    photographer_name: Pomax
+    photographer_link: https://www.flickr.com/photos/pomax/
+  - id: 5
+    image_path: /assets/slideshow/image5.jpg
+    description: Rose Garden Branch Library.
+    photographer_name: John Menard
+    photographer_link: https://www.flickr.com/photos/jmenard48/
+navbar:
+  - id: 0
+    label: Home
+    path: /index.html
+    visible: True
+  - id: 1
+    label: Committees
+    path: /committees.html
+    visible: True
+  - id: 2
+    label: Call for Papers
+    path: /cfp.html
+    visible: True
+  - id: 3
+    label: Submission
+    path: /submission.html
+    visible: True
+  - id: 4
+    label: Program
+    path: /program.html
+    visible: True
+  - id: 5
+    label: Venue
+    path: /venue.html
+    visible: True
+  - id: 6
+    label: Registration
+    path: /registration.html
+    visible: True
+sponsors:
+  # - name: Adobe
+  #   logo_path: /assets/sponsors/adobe-logo.png
+  # - name: Akamai
+  #   logo_path: /assets/sponsors/akamai-logo.png
+  # - name: Google
+  #   logo_path: /assets/sponsors/google-logo.png
+  # - name: IBM
+  #   logo_path: /assets/sponsors/ibm-logo.jpg
+  # - name: IEEE
+  #   logo_path: /assets/sponsors/ieee-logo.gif
+social_media:
+  facebook_link: https://www.facebook.com/hotwebseries/
+  twitter_link:
+organizing_committees:
+  - role: Program Chair
+    name: Qun Li
+    org: College of William and Mary (USA)
+    homepage: http://www.cs.wm.edu/liqun
+  - role: Registration Chair
+    name: TBA
+    org: TBA
+    homepage: TBA
+
+

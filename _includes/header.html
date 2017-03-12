@@ -1,0 +1,100 @@
+<header class="site-header">
+    <div class="container">
+    <div class="row mt-xs-0 mt-sm-0 mt-md-1 mt-lg-2 mt-xl-3 mb-xs-2 mb-sm-2">
+
+        <!--conference info-->
+        <div class="col-xs-6 col-sm-5 col-md-4 offset-md-1 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">
+
+            <div class="jumbotron">
+                <img class="img-fluid" src="{{ site.baseurl }}{{ site.data.conference.logo_path }}">
+                <p class="text-center">{{ site.data.conference.date }}</p>
+                <p class="text-center"><strong>{{ site.data.conference.title }}</strong></p>
+                <p class="text-center">{{ site.data.conference.location }}</p>
+            </div>
+
+        </div>     
+
+        <!--slide show-->
+        <div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+                
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner" role="listbox">
+                            
+                            {% for slide in site.data.conference.slideshow %}
+                            {% if slide.active %}
+                            <div class="carousel-item active">
+                            {% else %}
+                            <div class="carousel-item">
+                            {% endif %}
+                                <!--<img class="img-fluid" src="{{ site.baseurl }}{{ slide.image_path }}" alt="{{ slide.description }}">-->
+                                <img class="img-fluid" src="{{ site.baseurl }}{{ slide.image_path }}" alt="{{ slide.description }}">
+                                <div class="carousel-caption d-none d-md-block text-muted align-bottom">
+                                    <p>
+                                        Photo by <a href="{{ slide.photographer_link }}">{{slide.photographer_name}}</a>. Available
+                                        under the <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons license</a>.
+                                    </p>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+                        </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <!--navbar-->
+        <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+                <nav class="nav navbar-toggleable-md navbar-inverse bg-inverse" style="margin-top: 0.25rem; margin-bottom: 0.25rem;border-radius: 0.75rem;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarToggler">
+                        <a class="navbar-brand" href="#"> </a>
+                        <ul class="navbar-nav mr-auto text-center">
+                            {% for nav in site.data.conference.navbar %}
+                                {% if nav.visible %}
+                                    {% if page.url == nav.path %}
+                                        <li class="nav-item active">
+                                            <a class="nav-link m-1" href="{{ nav.path }}">{{ nav.label }} <span class="sr-only">(current)</span></a>
+                                        </li>
+                                    {% else %}
+                                        <li class="nav-item">
+                                            <a class="nav-link m-1" href="{{ nav.path }}">{{ nav.label }}</a>
+                                        </li>   
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                        
+                        <ul class="navbar-nav ml-auto">
+                            {% if site.data.conference.social_media.facebook_link != nil %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ site.data.conference.social_media.facebook_link }}">
+                                    <span class="fa-stack">
+                                        <i class="fa fa-facebook-square fa-stack-2x"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if site.data.conference.social_media.twitter_link != nil %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ site.data.conference.social_media.twitter_link }}">
+                                    <span class="fa-stack">
+                                        <i class="fa fa-twitter-square fa-stack-2x"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                        </ul>
+
+                    </div>
+                </nav>
+        </div>
+
+    </div>
+    </div>
+</header>
