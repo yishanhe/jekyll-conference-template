@@ -23,6 +23,16 @@ An academic conference website template built using Jekyll.
 - Font-awesome
 - Bootstrap v4.
 
+## Preview
+
+### home page
+![home page image](./preview/home.png)
+
+### committees page
+![committees page image](./preview/committee.png)
+
+### mobile version
+<img src="./preview/mobile.png" alt="mobile version image" style="height: 800px;"/>
 
 ## TODO
 
