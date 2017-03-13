@@ -6,7 +6,7 @@
         <div class="col-xs-6 col-sm-7 col-md-6 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">
 
             <div class="jumbotron">
-                <img class="img-fluid" src="{{ site.baseurl }}{{ site.data.conference.logo_path }}">
+                <img class="img-fluid" src="{{ site.data.conference.logo_path }}">
                 <p class="text-center mt-0">{{ site.data.conference.date }}</p>
                 <p class="text-center"><strong>{{ site.data.conference.full_title }}</strong></p>
                 <p class="text-center mb-0">{{ site.data.conference.location }}</p>
@@ -28,7 +28,7 @@
                             <div class="carousel-item">
                             {% endif %}
                                 <!--<img class="img-fluid" src="{{ site.baseurl }}{{ slide.image_path }}" alt="{{ slide.description }}">-->
-                                <img class="img-fluid" src="{{ slide.image_path | prepend: site.baseurl | prepend: site.url }}" alt="{{ slide.description }}">
+                                <img class="img-fluid" src="{{ slide.image_path }}" alt="{{ slide.description }}">
                                 <div class="carousel-caption d-none d-md-block text-muted align-bottom">
                                     <p>
                                         Photo by <a href="{{ slide.photographer_link }}">{{slide.photographer_name}}</a>. Available

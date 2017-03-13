@@ -6,10 +6,10 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.data.conference.short_title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.data.conference.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  {% css main %}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ site.baseurl }}{{ site.css }} ">
+  <link rel="stylesheet" href="{{ site.css }} ">
+  <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
   {% if jekyll.environment == 'production' and site.google_analytics %}

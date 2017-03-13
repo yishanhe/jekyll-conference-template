@@ -14,14 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-baseurl: "/~syi/hotweb2017" # the subpath of your site, e.g. /blog
-url: "http://www.cs.wm.edu" # the base hostname & protocol for your site, e.g. http://example.com
-css: /hotweb.css
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+css: ./assets/hotweb.css
 
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-assets
+# gems:
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -29,12 +28,3 @@ exclude:
 timezone: America/New_York
 google_analytics:
 
-# Assets
-assets:
-  assets:
-    - "*.jpg"
-    - "*.png"
-    - "*.gif"
-  sources:
-    - _assets/css
-    - _assets/images

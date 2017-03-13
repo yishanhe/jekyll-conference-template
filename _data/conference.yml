@@ -6,36 +6,36 @@ description: > # this means to ignore newlines until "baseurl:"
   in the design, implementation, and evaluation of Internet systems and applications. 
 location: San Jose, CA, 2017
 date: October 17, 2017
-logo_path: /assets/logo2017.jpg
+logo_path: ./assets/images/logo2017.jpg
 slideshow:
   - id: 0
-    image_path: /assets/slideshow/image0.jpg
+    image_path: ./assets/images/slideshow/image0.jpg
     description: San Jose night scene.
     photographer_name: Mike Boening
     photographer_link: https://www.flickr.com/photos/memoriesbymike/
     active: True
   - id: 1
-    image_path: /assets/slideshow/image1.jpg
+    image_path: ./assets/images/slideshow/image1.jpg
     description: San Jose Museum of Art.
     photographer_name: Bryan Nabong
     photographer_link: https://www.flickr.com/photos/bongarang/
   - id: 2
-    image_path: /assets/slideshow/image2.jpg
+    image_path: ./assets/images/slideshow/image2.jpg
     description: San Jose State University.
     photographer_name: David Sawyer
     photographer_link: https://www.flickr.com/photos/18702768@N04/
   - id: 3
-    image_path: /assets/slideshow/image3.jpg
+    image_path: ./assets/images/slideshow/image3.jpg
     description: Cathedral Basilica of St. Joseph.
     photographer_name: Patricia Montes Gregory
     photographer_link: https://www.flickr.com/photos/32159045@N02/
   - id: 4
-    image_path: /assets/slideshow/image4.jpg
+    image_path: ./assets/images/slideshow/image4.jpg
     description: Winchester Mystery House.
     photographer_name: Pomax
     photographer_link: https://www.flickr.com/photos/pomax/
   - id: 5
-    image_path: /assets/slideshow/image5.jpg
+    image_path: ./assets/images/slideshow/image5.jpg
     description: Rose Garden Branch Library.
     photographer_name: John Menard
     photographer_link: https://www.flickr.com/photos/jmenard48/
