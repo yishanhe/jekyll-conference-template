@@ -29,10 +29,9 @@
                             {% endif %}
                                 <!--<img class="img-fluid" src="{{ site.baseurl }}{{ slide.image_path }}" alt="{{ slide.description }}">-->
                                 <img class="img-fluid" src="{{ slide.image_path }}" alt="{{ slide.description }}">
-                                <div class="carousel-caption d-none d-md-block text-muted align-bottom">
-                                    <p>
-                                        Photo by <a href="{{ slide.photographer_link }}">{{slide.photographer_name}}</a>. Available
-                                        under the <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons license</a>.
+                                <div class="carousel-caption d-none d-md-block text-muted">
+                                    <p class="align-bottom"> {{ slide.description }}, by <a href="{{ slide.photographer_link }}">{{slide.photographer_name}}</a>, 
+                                        under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons license</a>.
                                     </p>
                                 </div>
                             </div>
@@ -47,7 +46,7 @@
 
         <!--navbar-->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
-                <nav class="nav navbar-toggleable-md navbar-inverse bg-inverse">
+                <nav class="nav navbar-toggleable-sm navbar-inverse">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>

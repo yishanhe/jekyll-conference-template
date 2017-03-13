@@ -35,7 +35,9 @@ slide_id: 0
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 col-xl-5">
                 <!--######### important dates ##########-->
                 <div class="card">
-                    <div class="card-header text-white bg-inverse">Important Dates</div>
+                    <div class="card-header text-white bg-inverse">
+                        <i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Important Dates
+                    </div>
                     <div class="card-block bg-faded">
                         <ul class="list-group list-group-flush">
                             {% if site.data.conference.deadlines %}
@@ -44,12 +46,12 @@ slide_id: 0
                                 {% capture posttime %}{{deadline.date | date: '%s'}}{% endcapture %}
                                 {% if posttime > nowunix %}
                                     <li class="list-group-item bg-faded text-muted">
-                                        <strong>{{ deadline.text }}:</strong> {{ deadline.date | date: "%B %-d, %Y (%r %Z)" }}
+                                        <strong>{{ deadline.text }}:</strong> {{ deadline.date | date: "%B %-d, %Y (%r %Z)" }} <i class="fa fa-calendar ml-1" aria-hidden="true"></i>
                                     </li>
                                 {% else %}
                                      <li class="list-group-item bg-faded text-muted">
                                         <del>
-                                            <strong>{{ deadline.text }}:</strong> {{ deadline.date | date: "%B %-d, %Y (%r %Z)" }}
+                                            <strong>{{ deadline.text }}:</strong> {{ deadline.date | date: "%B %-d, %Y (%r %Z)" }} <i class="fa fa-calendar ml-1" aria-hidden="true"></i>
                                         </del>  
                                     </li>                                   
                                 {% endif %}
@@ -63,7 +65,9 @@ slide_id: 0
                 <!--####################################-->
                 <!--######### news #####################-->
                 <div class="card">
-                    <div class="card-header text-white bg-inverse">News</div>
+                    <div class="card-header text-white bg-inverse">
+                        <i class="fa fa-newspaper-o mr-3" aria-hidden="true"></i>News
+                    </div>
                     <div class="card-block bg-faded">
                         <ul class="list-group list-group-flush">
                             {% if site.data.conference.news %}

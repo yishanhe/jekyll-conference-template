@@ -9,7 +9,7 @@ slide_id: 1
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <!--######### Organizing ##########-->
             <div class="card">
-                <div class="card-header text-white bg-inverse committee-card-header">Organizing Committee</div>
+                <div class="card-header text-white bg-inverse"> <i class="fa fa-users mr-3" aria-hidden="true"></i>Organizing Committee</div>
                 {% if site.data.conference.organizing_committees %}
                 {% for committee in site.data.conference.organizing_committees %}
                  <div class="card-block bg-faded">
@@ -28,7 +28,7 @@ slide_id: 1
             </div>
             <!--######### Steering ##########-->
             <div class="card">
-                <div class="card-header text-white bg-inverse">Steering Committee</div>
+                <div class="card-header text-white bg-inverse"><i class="fa fa-users mr-3" aria-hidden="true"></i>Steering Committee</div>
                 {% if site.data.conference.steering_committees %}
                 {% for committee in site.data.conference.steering_committees %}
                  <div class="card-block bg-faded">
@@ -49,7 +49,7 @@ slide_id: 1
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <!--######### TPC ##########-->
             <div class="card">
-                <div class="card-header text-white bg-inverse">Technical Program Committee</div>
+                <div class="card-header text-white bg-inverse"><i class="fa fa-users mr-3" aria-hidden="true"></i>Technical Program Committee</div>
                 {% if site.data.conference.technical_program_committees %}
                 {% for committee in site.data.conference.technical_program_committees %}
                  <div class="card-block bg-faded">

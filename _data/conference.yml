@@ -10,33 +10,33 @@ logo_path: ./assets/images/logo2017.jpg
 slideshow:
   - id: 0
     image_path: ./assets/images/slideshow/image0.jpg
-    description: San Jose night scene.
+    description: San Jose night scene
     photographer_name: Mike Boening
     photographer_link: https://www.flickr.com/photos/memoriesbymike/
     active: True
   - id: 1
     image_path: ./assets/images/slideshow/image1.jpg
-    description: San Jose Museum of Art.
+    description: San Jose Museum of Art
     photographer_name: Bryan Nabong
     photographer_link: https://www.flickr.com/photos/bongarang/
   - id: 2
     image_path: ./assets/images/slideshow/image2.jpg
-    description: San Jose State University.
+    description: San Jose State University
     photographer_name: David Sawyer
     photographer_link: https://www.flickr.com/photos/18702768@N04/
   - id: 3
     image_path: ./assets/images/slideshow/image3.jpg
-    description: Cathedral Basilica of St. Joseph.
+    description: Cathedral Basilica of St. Joseph
     photographer_name: Patricia Montes Gregory
     photographer_link: https://www.flickr.com/photos/32159045@N02/
   - id: 4
     image_path: ./assets/images/slideshow/image4.jpg
-    description: Winchester Mystery House.
+    description: Winchester Mystery House
     photographer_name: Pomax
     photographer_link: https://www.flickr.com/photos/pomax/
   - id: 5
     image_path: ./assets/images/slideshow/image5.jpg
-    description: Rose Garden Branch Library.
+    description: Rose Garden Branch Library
     photographer_name: John Menard
     photographer_link: https://www.flickr.com/photos/jmenard48/
 navbar:
@@ -69,24 +69,24 @@ navbar:
     path: ./registration.html
     visible: True
 deadlines:
-  # - date: 2017-2-17 23:59:59 -0700
-  #   text: Submission deadline
-  # - date: 2017-4-17 23:59:59 -0700
-  #   text: Notification of acceptance
+  - date: 2017-2-17 23:59:59 -0700
+    text: Submission deadline
+  - date: 2017-4-17 23:59:59 -0700
+    text: Notification of acceptance
 news:
   - date: 2017-03-08
     text: Website online
 sponsors:
-  # - name: Adobe
-  #   logo_path: /assets/sponsors/adobe-logo.png
-  # - name: Akamai
-  #   logo_path: /assets/sponsors/akamai-logo.png
-  # - name: Google
-  #   logo_path: /assets/sponsors/google-logo.png
-  # - name: IBM
-  #   logo_path: /assets/sponsors/ibm-logo.jpg
-  # - name: IEEE
-  #   logo_path: /assets/sponsors/ieee-logo.gif
+  - name: Adobe
+    logo_path: ./assets/images/sponsors/adobe-logo.png
+  - name: Akamai
+    logo_path: ./assets/images/sponsors/akamai-logo.png
+  - name: Google
+    logo_path: ./assets/images/sponsors/google-logo.png
+  - name: IBM
+    logo_path: ./assets/images/sponsors/ibm-logo.jpg
+  - name: IEEE
+    logo_path: ./assets/images/sponsors/ieee-logo.gif
 social_media:
   facebook_link: https://www.facebook.com/hotwebseries/
   twitter_link:
