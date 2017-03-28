@@ -63,16 +63,20 @@ navbar:
   - id: 5
     label: Venue
     path: ./venue.html
-    visible: False
+    visible: True
   - id: 6
     label: Registration
     path: ./registration.html
     visible: True
 deadlines:
   - date: 2017-2-17 23:59:59 -0700
+    timezone: PDT
     text: Submission deadline
+    pass_due: True
   - date: 2017-4-17 23:59:59 -0700
+    timezone: PDT
     text: Notification of acceptance
+    pass_due: True
 news:
   - date: 2017-03-08
     text: Website online
@@ -107,4 +111,5 @@ technical_program_committees:
   - name: TBA
     org: TBA
     homepage: TBA
+
 

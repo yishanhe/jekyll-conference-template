@@ -24,6 +24,43 @@ slide_id: 0
                     This year HotWeb will be co-located with the second IEEE/ACM Symposium on Edge Computing (<a href="http://acm-ieee-sec.org/2017/">SEC 2017</a>).
                 </p>
 
+                <p>HotWeb is a forum that brings together researchers and
+                    practitioners interested in the design, implementation, and
+                    evaluation of Internet systems and applications. Sponsored by
+                    the IEEE Computer Society and by IEEE-CS Technical Committee on
+                    the Internet, the workshop seeks to act as a conduit for the
+                    presentation of novel approaches used in support of performance,
+                    scalability, and security of Internet systems and applications, including
+                    Web searching and indexing, content distribution and delivery
+                    networks, Web services, online social networks, Web of Things,
+                    mobile Web, and edge computing.</p>
+
+                    <p>The topics of interest include, but are by no means limited
+                    to:</p>
+                    
+                    <ul>
+                        <li>Content delivery architectures</li>
+                        <li>Peer-to-Peer systems</li>
+                        <li>Support for mobile and wireless systems</li>
+                        <li>Web caching and replication</li>
+                        <li>Edge services and dynamic content delivery</li>
+                        <li>Multimedia content distribution</li>
+                        <li>Overlay networks</li>
+                        <li>Content placement and request routing</li>
+                        <li>Measurement studies of deployed systems</li>
+                        <li>Security and privacy</li>
+                        <li>Wide-area upload and content gathering</li>
+                        <li>Novel web-based applications</li>
+                        <li>Web/database integration</li>
+                        <li>Information retrieval and searching</li>
+                        <li>Electronic commerce</li>
+                        <li>Internet telephony</li>
+                        <li>Social computing</li>
+                        <li>Web of Things</li>
+                        <li>Mobile web</li>
+                        <li>Big web data</li>
+                    </ul>
+
 
                 <div class="alert alert-warning rounded mt-4">
                     <h5>Contact</h5>
@@ -34,52 +71,10 @@ slide_id: 0
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 col-xl-5">
                 <!--######### important dates ##########-->
-                <div class="card">
-                    <div class="card-header text-white bg-inverse">
-                        <i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Important Dates
-                    </div>
-                    <div class="card-block bg-faded">
-                        <ul class="list-group list-group-flush">
-                            {% if site.data.conference.deadlines %}
-                                {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-                                {% for deadline in site.data.conference.deadlines %}
-                                {% capture posttime %}{{deadline.date | date: '%s'}}{% endcapture %}
-                                {% if posttime > nowunix %}
-                                    <li class="list-group-item bg-faded text-muted">
-                                        <strong>{{ deadline.text }}:</strong> {{ deadline.date | date: "%B %-d, %Y (%r %Z)" }} <i class="fa fa-calendar ml-1" aria-hidden="true"></i>
-                                    </li>
-                                {% else %}
-                                     <li class="list-group-item bg-faded text-muted">
-                                        <del>
-                                            <strong>{{ deadline.text }}:</strong> {{ deadline.date | date: "%B %-d, %Y (%r %Z)" }} <i class="fa fa-calendar ml-1" aria-hidden="true"></i>
-                                        </del>  
-                                    </li>                                   
-                                {% endif %}
-                                {% endfor %}
-                            {% else %}
-                                <li class="list-group-item bg-faded text-muted">TBA</li>
-                            {% endif %}
-                        </ul>
-                    </div>
-                </div>
+                {% include card-important-dates.html %}
                 <!--####################################-->
                 <!--######### news #####################-->
-                <div class="card">
-                    <div class="card-header text-white bg-inverse">
-                        <i class="fa fa-newspaper-o mr-3" aria-hidden="true"></i>News
-                    </div>
-                    <div class="card-block bg-faded">
-                        <ul class="list-group list-group-flush">
-                            {% if site.data.conference.news %}
-                                {% for news_entry in site.data.conference.news %}
-                                <li class="list-group-item bg-faded text-muted">{{ news_entry.date | date: "%B %-d, %Y" }} - {{ news_entry.text }}</li>
-                                {% endfor %}
-                            {% else %}
-                                <li class="list-group-item bg-faded text-muted">TBA</li>
-                            {% endif %}
-                        </ul>
-                    </div>
-                </div>
+                {% include card-news.html %}
                 <!--####################################-->
         </div>
     </div>
