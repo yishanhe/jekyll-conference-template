@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   HotWeb is a forum bringing together researchers and practitioners interested 
   in the design, implementation, and evaluation of Internet systems and applications. 
 location: San Jose, CA, 2017
-date: October 17, 2017
+date: October 14, 2017
 logo_path: ./assets/images/logo2017.jpg
 slideshow:
   - id: 0
@@ -42,53 +42,50 @@ slideshow:
 navbar:
   - id: 0
     label: Home
-    path: ./index.html
+    path: /
     visible: True
   - id: 1
-    label: Committees
-    path: ./committees.html
+    label: Organziers
+    path: /organization.html
     visible: True
   - id: 2
     label: Call for Papers
-    path: ./cfp.html
+    path: /cfp.html
     visible: True
   - id: 3
     label: Submission
-    path: ./submission.html
+    path: /submission.html
     visible: True
   - id: 4
-    label: Program
-    path: ./program.html
+    label: Programs
+    path: /program.html
     visible: True
   - id: 5
     label: Venue
-    path: ./venue.html
+    path: /venue.html
     visible: True
   - id: 6
     label: Registration
-    path: ./registration.html
+    path: /registration.html
     visible: True
 deadlines:
-  - date: 2017-2-17 23:59:59 -0700
+  - date: 2017-6-20 21:00:00
     timezone: PDT
     text: Submission deadline
-    pass_due: True
-  - date: 2017-4-17 23:59:59 -0700
-    timezone: PDT
+    pass_due: False
+  - date: 2017-8-7
     text: Notification of acceptance
-    pass_due: True
+    pass_due: False
+  - date: 2017-8-17
+    text: Camera-ready copy due
+    pass_due: False
+  - date: 2017-10-14
+    text: Workshop
+    pass_due: False
 news:
   - date: 2017-03-08
     text: Website online
 sponsors:
-  - name: Adobe
-    logo_path: ./assets/images/sponsors/adobe-logo.png
-  - name: Akamai
-    logo_path: ./assets/images/sponsors/akamai-logo.png
-  - name: Google
-    logo_path: ./assets/images/sponsors/google-logo.png
-  - name: IBM
-    logo_path: ./assets/images/sponsors/ibm-logo.jpg
   - name: IEEE
     logo_path: ./assets/images/sponsors/ieee-logo.gif
 social_media:
@@ -98,15 +95,37 @@ organizing_committees:
   - role: Program Chair
     name: Qun Li
     org: College of William and Mary (USA)
-    homepage: http://www.cs.wm.edu/liqun
+    homepage: http://www.cs.wm.edu/~liqun
   - role: Registration Chair
     name: TBA
     org: TBA
     homepage: TBA
+  - role: Webmaster
+    name: Shanhe Yi
+    org: College of William and Mary (USA)
+    homepage: http://www.cs.wm.edu/~syi
 steering_committees:
-  - name: TBA
-    org: TBA
-    homepage: TBA
+  - name: Azer Bestavros
+    org: Boston University (USA)
+    homepage: http://azer.bestavros.net/
+  - name: Songqing Chen
+    org: George Mason University (USA)
+    homepage: http://www.cs.gmu.edu/~sqchen/
+  - name: Fred Douglis
+    org: Dell EMC (USA)
+    homepage: http://www.douglis.org/fred/
+  - name: Arun Iyengar
+    org: IBM (USA)
+    homepage: http://researcher.watson.ibm.com/researcher/view.php?person=us-aruni
+  - name: Michael Rabinovich
+    org: Case Western Reserve University (USA)
+    homepage: http://engr.case.edu/rabinovich_michael/
+  - name: Pablo Rodriguez
+    org: Telefonica Research (Spain)
+    homepage: http://www.rodriguezrodriguez.com/
+  - name: Weisong Shi
+    org: Wayne State University (USA)
+    homepage: http://www.cs.wayne.edu/~weisong/
 technical_program_committees:
   - name: TBA
     org: TBA

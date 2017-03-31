@@ -1,18 +1,17 @@
-<div class="container">
-    <div class="row sponsor">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1 text-muted">
-            <h5 class="text-center">Sponsored by</h5>
-            {% if site.data.conference.sponsors == nil %}
-            <div class="alert alert-warning rounded text-center m-1">
-                <p>TBA</p>
-            </div>
-            {% else %}
-            <div class="row">
-                {% for sponsor in site.data.conference.sponsors %}
-                    <img class="img-fluid mx-auto d-inline-block mb-2 mt-2" src="{{ site.baseurl }}{{ sponsor.logo_path }}" alt="{{ sponsor.name }}">
-                {% endfor %}
-            </div>
-            {% endif %}
+<div class="row sponsor">
+    <div class="col">
+        <h6>SPONSORS</h6>
+        {% if site.data.conference.sponsors == nil %}
+        <div class="alert alert-warning rounded text-center m-1">
+            <p>TBA</p>
         </div>
+        {% else %}
+        <div class="row">
+            {% for sponsor in site.data.conference.sponsors %}
+                <img class="img-fluid mr-auto d-inline-block mb-2 mt-2" src="{{ site.baseurl }}{{ sponsor.logo_path }}" alt="{{ sponsor.name }}">
+            {% endfor %}
+        </div>
+        {% endif %}
     </div>
 </div>
+

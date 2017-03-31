@@ -1,7 +1,25 @@
+.body {
+   font-family:  Helvetica,Arial,sans-serif
+}
+
 .jumbotron,
 .carousel-item {
-    height: 20rem;
+    height: 270px;
     border-radius: 0;
+}
+
+.jumbotron {
+    background-color: #e0e8ef;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 0px 5px 0px;
+}
+
+
+.jumbotron p {
+    font-size: 1.1em;
+}
+.jumbotron h5 {
+    font-size: 1.6em;
 }
 
 .alert,
@@ -14,7 +32,7 @@
 
 
 .carousel-caption {
-    bottom: 0rem;
+    bottom: 1rem;
     opacity: 0.9;
     height: 1rem;
 }
@@ -24,20 +42,61 @@
 }
 
 .card {
-    margin-top: 0.75rem; 
+    margin-top: 0.25rem; 
     margin-bottom: 1.25rem;
-    border-radius: 0.75rem;
+    border-radius: 12px;
     overflow: hidden;
 }
 
+.card-block,
+.conference-text {
+    font-size: 85%;
+}
+
 .card-block {
-    font-size: 90%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: #eee;
+}
+
+.committee {
+    padding: 10px;
+    border-top: 0.05rem solid #e5e5e5;
+
+}
+.card-header {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.card-block p {
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+.card-block a {
+    color: inherit;
 }
 
 .nav {
-    margin-top: 0.25rem; 
-    margin-bottom: 0.25rem;
-    border-radius: 0.75rem;
+    border-radius: 12px;
+}
+
+.mynav {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+.list-group-item {
+    font-size: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    overflow: hidden;
 }
 
 .sponsor {
@@ -62,5 +121,9 @@ footer {
 
 .card-header,
 .nav {
-    background: linear-gradient(to right, rgba(2,71,114,1), rgba(3,35,53,1));
+    background: #333;
+    font-size: 80%;
 }
+
+.navbar-inverse .navbar-nav  > li > a:hover { color: #5393c5 !important; }
+.navbar-inverse .navbar-nav  > .active { color: #5393c5 !important; }
