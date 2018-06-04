@@ -1,22 +1,26 @@
 <div class="card">
     <div class="card-header text-white bg-inverse">
-        <i class="fa fa-calendar-o mr-3" aria-hidden="true"></i>Important Dates
+        <i class="fa fa-calendar-o mr-3" aria-hidden="true"></i><strong>Important Dates</strong>
     </div>
     <div class="card-block bg-faded">
         <ul class="list-group list-group-flush">
             {% if site.data.conference.deadlines %}
                 {% for deadline in site.data.conference.deadlines %}
-                    {% if deadline.pass_due %}
+                    
                         <li class="list-group-item bg-faded text-muted">
+                            {% if deadline.pass_due %}
                             <del>
-                                <strong>{{ deadline.text }}:</strong> {{ deadline.date | date: "%B %-d, %Y (%r " }}{{ deadline.timezone }}) <i class="fa fa-calendar fa-fw ml-1" aria-hidden="true"></i>
+                            {% endif %}
+                                <p><strong>{{ deadline.text }}:</strong> 
+                                {% if deadline.timezone %}
+                                {{ deadline.date | date: "%B %e, %Y." }} ({{ deadline.timezone }})
+                                {% else %}
+                                {{ deadline.date | date: "%B %e, %Y." }}
+                                {% endif %}</p>
+                            {% if deadline.pass_due %}
                             </del>
+                            {% endif %}
                         </li>
-                    {% else %}
-                        <li class="list-group-item bg-faded text-muted">
-                            <strong>{{ deadline.text }}:</strong> {{ deadline.date | date: "%B %-d, %Y (%r " }}{{ deadline.timezone }}) <i class="fa fa-calendar fa-fw ml-1" aria-hidden="true"></i>
-                        </li>                                   
-                    {% endif %}
                 {% endfor %}
             {% else %}
                 <li class="list-group-item bg-faded text-muted">TBA</li>

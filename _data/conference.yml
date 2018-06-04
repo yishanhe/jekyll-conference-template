@@ -1,11 +1,11 @@
-full_title: Fifth IEEE Workshop on Hot Topics in Web Systems and Technologies
+full_title: Fifth ACM/IEEE Workshop on Hot Topics in Web Systems and Technologies
 short_title: Hotweb 2017
-email: hotwebchair@gmail.com
+email: hotweb2017@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   HotWeb is a forum bringing together researchers and practitioners interested 
   in the design, implementation, and evaluation of Internet systems and applications. 
 location: San Jose, CA, 2017
-date: October 17, 2017
+date: October 14, 2017
 logo_path: ./assets/images/logo2017.jpg
 slideshow:
   - id: 0
@@ -42,74 +42,144 @@ slideshow:
 navbar:
   - id: 0
     label: Home
-    path: ./index.html
+    path: /
     visible: True
   - id: 1
-    label: Committees
-    path: ./committees.html
+    label: Organization
+    path: /organization.html
     visible: True
   - id: 2
     label: Call for Papers
-    path: ./cfp.html
+    path: /cfp.html
     visible: True
   - id: 3
     label: Submission
-    path: ./submission.html
+    path: /submission.html
     visible: True
   - id: 4
-    label: Program
-    path: ./program.html
+    label: Programs
+    path: /program.html
     visible: True
   - id: 5
     label: Venue
-    path: ./venue.html
+    path: /venue.html
     visible: True
   - id: 6
     label: Registration
-    path: ./registration.html
+    path: /registration.html
     visible: True
 deadlines:
-  - date: 2017-2-17 23:59:59 -0700
-    timezone: PDT
-    text: Submission deadline
-    pass_due: True
-  - date: 2017-4-17 23:59:59 -0700
-    timezone: PDT
+  - date: 2017-7-6
+    timezone: 9PM PDT
+    text: Submission deadline (extended)
+    pass_due: False
+  - date: 2017-8-7
     text: Notification of acceptance
-    pass_due: True
+    pass_due: False
+  - date: 2017-8-17
+    text: Camera-ready copy due
+    pass_due: False
+  - date: 2017-10-14
+    text: Workshop
+    pass_due: False
 news:
+  - date: 2017-10-14
+    text: Workshop has been successfully held
+  - date: 2017-05-12
+    text: Submission site online
   - date: 2017-03-08
     text: Website online
 sponsors:
-  - name: Adobe
-    logo_path: ./assets/images/sponsors/adobe-logo.png
-  - name: Akamai
-    logo_path: ./assets/images/sponsors/akamai-logo.png
-  - name: Google
-    logo_path: ./assets/images/sponsors/google-logo.png
-  - name: IBM
-    logo_path: ./assets/images/sponsors/ibm-logo.jpg
+  - name: ACM
+    logo_path: ./assets/images/sponsors/acm-logo.png
   - name: IEEE
     logo_path: ./assets/images/sponsors/ieee-logo.gif
 social_media:
   facebook_link: https://www.facebook.com/hotwebseries/
   twitter_link:
-organizing_committees:
-  - role: Program Chair
-    name: Qun Li
+program_chair:
+  - name: Qun Li
     org: College of William and Mary (USA)
-    homepage: http://www.cs.wm.edu/liqun
-  - role: Registration Chair
-    name: TBA
-    org: TBA
-    homepage: TBA
+    homepage: http://www.cs.wm.edu/~liqun
+  - name: Songqing Chen
+    org: George Mason University (USA)
+    homepage: http://www.cs.gmu.edu/~sqchen/
 steering_committees:
-  - name: TBA
-    org: TBA
-    homepage: TBA
+  - name: Azer Bestavros
+    org: Boston University (USA)
+    homepage: http://azer.bestavros.net/
+  - name: Songqing Chen
+    org: George Mason University (USA)
+    homepage: http://www.cs.gmu.edu/~sqchen/
+  - name: Fred Douglis
+    org: Dell EMC (USA)
+    homepage: http://www.douglis.org/fred/
+  - name: Arun Iyengar
+    org: IBM (USA)
+    homepage: http://researcher.watson.ibm.com/researcher/view.php?person=us-aruni
+  - name: Michael Rabinovich
+    org: Case Western Reserve University (USA)
+    homepage: http://engr.case.edu/rabinovich_michael/
+  - name: Pablo Rodriguez
+    org: Telefonica Research (Spain)
+    homepage: http://www.rodriguezrodriguez.com/
+  - name: Weisong Shi
+    org: Wayne State University (USA)
+    homepage: http://www.cs.wayne.edu/~weisong/
 technical_program_committees:
-  - name: TBA
-    org: TBA
-    homepage: TBA
-
+  - name: Azer Bestavros 
+    org: Boston University (USA)
+    homepage: http://www.bu.edu/cs/azer-bestavros/
+  - name: Pei Cao
+    org: Google (USA)
+    homepage: http://crypto.stanford.edu/~cao/
+  - name: Brian Davison
+    org: Lehigh University (USA)
+    homepage: http://www.cse.lehigh.edu/~brian/
+  - name: Fred Douglis
+    org: Dell EMC (USA)
+    homepage: http://www.douglis.org/fred/
+  - name: Giancarlo Fortino
+    org: University of Calabria (Italy)
+    homepage: http://si.deis.unical.it/fortino/
+  - name: Lei Guo
+    org: Google (USA)
+    homepage: https://scholar.google.com/citations?user=h6Nw2X4AAAAJ&hl=en
+  - name: Yang Guo
+    org: NIST (USA)
+    homepage: https://sites.google.com/site/yangguohomepage/
+  - name: Arun Iyengar
+    org: IBM (USA)
+    homepage: http://researcher.watson.ibm.com/researcher/view.php?person=us-aruni
+  - name: Aziz Mohaisen
+    org: SUNY Buffalo (USA)
+    homepage: http://www.cse.buffalo.edu/~mohaisen/
+  - name: Guillaume Pierre
+    org: Rennes 1 University (France)
+    homepage: http://www.globule.org/~gpierre/
+  - name: Michael Rabinovich
+    org: Case Western Reserve University (USA)
+    homepage: http://engr.case.edu/rabinovich_michael/
+  - name: Thomas Steiner
+    org: Google (Germany)
+    homepage: https://research.google.com/pubs/author39477.html
+  - name: Christopher Stewart
+    org: Ohio State University (USA)
+    homepage: http://web.cse.ohio-state.edu/~stewart.962/
+  - name: Vishy Swaminathan
+    org: Adobe Research (USA)
+    homepage: https://research.adobe.com/person/vishy-swaminathan/
+  - name: Qingyang Wang
+    org: Louisiana State University (USA)
+    homepage: http://csc.lsu.edu/~qywang/
+  - name: Craig Wills
+    org: Worcester Polytechnic Institute (USA)
+    homepage: http://web.cs.wpi.edu/~cew/
+  - name: Yifan Zhang
+    org: SUNY Binghamton (USA)
+    homepage: http://www.cs.binghamton.edu/~zhangy/
+webmaster:
+  - name: Shanhe Yi
+    org: College of William and Mary (USA)
+    homepage: http://www.cs.wm.edu/~syi
 

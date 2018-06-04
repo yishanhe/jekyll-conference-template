@@ -1,0 +1,56 @@
+- id: 1
+  title: "Precog: Action-Based Time-Shifted Prefetching for Web Applications on Mobile Devices"
+  speakers: "Shruti Sanadhya (Hewlett Packard Labs, Palo Alto, CA), Uma Parthavi Moravapalle (Georgia Institute of Technology, Atlanta, GA), Kyu-Han Kim (Hewlett Packard Labs, Palo Alto, CA), Raghupathy Sivakumar (Georgia Institute of Technology, Atlanta, GA)"
+  type: "presentation"
+- id: 2
+  title: "Automated Least Privileges in Cloud-Based Web Services"
+  speakers: "Matthew Sanders (Colorado School of Mines), Chuan Yue (Colorado School of Mines)"
+  type: "presentation"
+- id: 3
+  title: "Extracting Web Information using Representation Patterns"
+  speakers: "Juan C. Roldán (University of Sevilla), Patricia Jiménez (University of Sevilla), Rafael Corchuelo (University of Sevilla)"
+  type: "presentation"
+- id: 4
+  title: "NoCDN: Scalable Content Delivery Without a Middleman"
+  speakers: "Junbo Xu:Case Western Reserve University;Michael Rabinovich:Case Western Reserve University"
+  type: "presentation"
+- id: 5
+  title: "Rethinking Information Sharing for Threat Intelligence"
+  speakers: "Aziz Mohaisen:University of Central Florida;Omar Al-Ibrahim:University of Central Florida;Charles Kamhoua:US Army Research Laboratory;Kevin Kwiat:Air Force Research Laboratory;Laurent L. Njilla:Air Force Research Laboratory"
+  type: "presentation"
+- id: 6
+  title: "Graphical passwords for older computer users"
+  speakers: "Nancy Carter:College of William & Mary;Ed Novak:Franklin & Marshall College;Cheng Li:College of William & Mary; Zhengrui Qin:Northwest Missouri State University; Qun Li:College of William & Mary;Jennifer A Stevens:College of William & Mary;Jiquo Yu:Qufu Normal University"
+  type: "presentation"
+- id: 7
+  title: "Mitigating DNS Random Subdomain DDoS Attacks by Efficient Distinct Heavy Hitters"
+  speakers: "Yehuda Afek: Tel-Aviv University, Israel;     Anat Bremler-Barr: Interdisciplinary Center, Israel;  Edith Cohen: Google Research and Tel-Aviv University; Shir Landau Feibish: Tel-Aviv University; Michal Shagam: Tel-Aviv University"
+  type: "presentation"
+- id: 8
+  title: "Understanding the Effectiveness of Typosquatting Techniques"
+  speakers: "Jeffrey Spaulding:University of Central Florida;DaeHun Nyang:Inha University;Aziz Mohaisen:University of Central Florida"
+  type: "presentation"
+- id: 9
+  title: "Inference attacks based on neural networks in social networks"
+  speakers: "Bo Mei:The George Washington University;Yinhao Xiao:The George Washington University;Hong Li:Chinese Academy of Sciences;Xiuzhen Cheng:The George Washington University;Yunchuan Sun:Beijng Normal University"
+  type: "presentation"
+- id: 10
+  title: "An Empirical Study of Financial Incentivized Question Answering in Social Websites"
+  speakers: "Huangxin Wang:George Mason University;Zhonghua Xi:George Mason University;Jean X. Zhang:Virginia Commonwealth University;Fei Li:George Mason University"
+  type: "presentation"
+- id: 11
+  title: "Edge Computing Enabled Smart Firefighting: Opportunities and Challenges"
+  speakers: "Xiaopei Wu: Wayne State University;Qingyang Zhang: Anhui University, Wayne State University;Weisong Shi: Wayne State University; "
+  type: "presentation"
+- id: 12
+  title: "Graph-Pubsub: An Efficient Publish/Subscribe Architecture with Graph-Based Information Relationships"
+  speakers: "Jiachen Chen:WINLAB, Rutgers University;Haoyuan Xu:WINLAB, Rutgers University, Yanyong Zhang:WINLAB Rutgers University; Dipankar Raychaudhuri:WINLAB Rutgers University"
+  type: "presentation"
+- id: 13
+  title: "A Knowledge and Reasoning Toolkit for Cognitive Applications"
+  speakers: "Mustafa Canim:IBM Research;Cristina Cornelio:IBM Research;Robert Farrell:IBM Research;Achille Fokoue:IBM Research;Kyle Gao:IBM Research;John Gunnels,:IBM Research;Arun Iyengar:IBM Research;Ryan Musa:IBM Research;Mariano Rodriguez-Muro:IBM Research"
+  type: "presentation"
+- id: 14
+  title: "Enabling Distributed Revision Control Systems in Delay-Tolerant"
+  speakers: "Philipp Hagemeister:Heinrich-Heine Universität Düsseldorf;Martin Mauve:Heinrich-Heine Universität Düsseldorf"
+  type: "presentation"

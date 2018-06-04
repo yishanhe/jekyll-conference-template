@@ -16,9 +16,9 @@ gem "jekyll", "3.4.2"
 # gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
-group :jekyll_plugins do
-    gem 'jekyll-admin'
-end
+#group :jekyll_plugins do
+#    gem 'jekyll-admin'
+#end
 
 gem 'tzinfo-data'
 gem 'tzinfo'

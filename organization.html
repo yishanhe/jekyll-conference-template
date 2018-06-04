@@ -1,0 +1,85 @@
+---
+layout: page
+slide_id: 1
+---
+
+    <div class="row">
+        
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <!--######### Program Chair ##########-->
+            <div class="card">
+                <div class="card-header text-white bg-inverse"><strong>Program Chairs</strong></div>
+                {% if site.data.conference.program_chair %}
+                {% for committee in site.data.conference.program_chair %}
+                 <div class="card-block bg-faded committee">
+                    <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
+                    <p class="card-subtitle text-muted" style="font-size: 90%;">{{ committee.org }}</p>
+                </div>  
+                {% endfor %}
+                {% else %}
+                <div class="card-block bg-faded committee">
+                    <p class="card-title">TBA</p>
+                    <p><strong>TBA</strong><p>
+                    <p class="card-subtitle text-muted" style="font-size: 90%;">TBA</p>
+                </div>               
+                {% endif %}
+            </div>
+            <!--######### Steering ##########-->
+            <div class="card">
+                <div class="card-header text-white bg-inverse"><strong>Steering Committee</strong></div>
+                {% if site.data.conference.steering_committees %}
+                {% for committee in site.data.conference.steering_committees %}
+                <div class="card-block bg-faded committee">
+                    <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
+                    <p class="card-subtitle text-muted" style="font-size: 90%;">{{ committee.org }}</p>
+                </div>  
+                {% endfor %}
+                {% else %}
+                <div class="card-block bg-faded committee">
+                    <p><strong>TBA</strong><p>
+                    <p class="card-subtitle text-muted" style="font-size: 90%;">TBA</p>
+                </div>               
+                {% endif %}
+            </div>
+            <!--######### webmaster ##########-->
+            <div class="card">
+                <div class="card-header text-white bg-inverse"><strong>Webmaster</strong></div>
+                {% if site.data.conference.webmaster %}
+                {% for committee in site.data.conference.webmaster %}
+                 <div class="card-block bg-faded committee">
+                    <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
+                    <p class="card-subtitle text-muted" style="font-size: 90%;">{{ committee.org }}</p>
+                </div>  
+                {% endfor %}
+                {% else %}
+                <div class="card-block bg-faded committee">
+                    <p><strong>TBA</strong><p>
+                    <p class="card-subtitle text-muted" style="font-size: 90%;">TBA</p>
+                </div>               
+                {% endif %}
+            </div>
+            <!--####################################-->
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <!--######### TPC ##########-->
+            <div class="card">
+                <div class="card-header text-white bg-inverse"><strong>Technical Program Committee</strong></div>
+                {% if site.data.conference.technical_program_committees %}
+                {% for committee in site.data.conference.technical_program_committees %}
+                 <div class="card-block bg-faded committee">
+                    <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
+                    <p class="card-subtitle text-muted" style="font-size: 90%;">{{ committee.org }}</p>
+                </div>  
+                {% endfor %}
+                {% else %}
+                <div class="card-block bg-faded committee">
+                    <p><strong>TBA</strong><p>
+                    <p class="card-subtitle text-muted" style="font-size: 90%;">TBA</p>
+                </div>               
+                {% endif %}
+            </div>
+            <!--####################################-->
+        </div>
+
+    </div>

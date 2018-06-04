@@ -26,5 +26,5 @@ exclude:
   - Gemfile.lock
 
 timezone: America/New_York
-google_analytics:
+google_analytics: UA-99357652-1
 
